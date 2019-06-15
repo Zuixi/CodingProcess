@@ -1,0 +1,3 @@
+D:/CodeRes/C_Code/LearnProcess/Demo/cmake-build-debug/CMakeFiles/Demo.dir
+D:/CodeRes/C_Code/LearnProcess/Demo/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/CodeRes/C_Code/LearnProcess/Demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
