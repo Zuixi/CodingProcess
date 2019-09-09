@@ -1,44 +1,52 @@
 #include <iostream>
 #include <cmath>
 #include <climits>
+#include <stdio.h>
+#include "test.h"
+#define  PRICE 30
 
-void  showUnicodeChar();
 int main() {
     using namespace std;
-    int carrots = 0;
-    cout << "How many carrots do you have?" << endl;
-    cin >> carrots;
-    cout << "Here are " << carrots << " carrots!" << endl;
-    carrots += 2;
-    cout << "Now you have " << carrots << " carrots!" << endl;
 
+    int  a, b;
+    a = b = 0;
 
-    double  area;
-    cout << "Enter your area of your home in square: ";
-    cin >> area;
-    double  side;
-    side = sqrt(area);
-    cout << "That's the equipment of a square: " << side
-         << "feet to the side!" << endl;
-    cout << "how fascinating!"<<endl;
+    while(true){
 
-    showUnicodeChar();
+        cin >> a;
+        // if don't input a int num
+        if(cin.fail()){
+            char ch;
+            // clear all and refresh
+            cin.clear();
+            ch = getchar();
 
-    wcout << "welcome to the wchar_t world"<< endl;
-    wchar_t  bo[2]= L"P";
-    wcout << bo<<endl;
-    wcout << L"tall" << endl;
+            if(ch == '|') {
+                cout << "not illegal" << endl;
+                break;
+            }
+        }
+
+        cin >> b;
+        // if don't input a int num
+        if(cin.fail()){
+            char ch;
+            // clear all and refresh
+            cin.clear();
+            ch = getchar();
+            if(ch == '|') {
+                cout << "not illegal" << endl;
+                break;
+            }
+        }
+        cout << "a = " << a << "\tb = " << b <<endl;
+    }
+
+    int N,Total;
+    N = 10;
+    Total = N * PRICE;
+    printf("Total = %d\n",Total);
     return 0;
 }
 
 
-
-void  showUnicodeChar(){
-    using namespace std;
-
-    cout << "test unicode char set with simple instance" << endl;
-
-    cout << "let's them eat g\u00E2teau.\n";
-    cout << "different char after g ,as you see!"<< endl;
-
-}
