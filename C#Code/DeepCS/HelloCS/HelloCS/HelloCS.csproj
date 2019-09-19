@@ -50,7 +50,10 @@
     <Compile Include="SimpleFactory\Car.cs" />
     <Compile Include="SimpleFactory\DriveCar.cs" />
     <Compile Include="SimpleFactory\Magnate.cs" />
+    <Compile Include="StateThread\StateObject.cs" />
     <Compile Include="TemplateDe\TNullableDe\NullableStruct.cs" />
+    <Compile Include="ThreadDeep\DataStore\DataThread.cs" />
+    <Compile Include="ThreadDeep\DataStore\MyThread.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
