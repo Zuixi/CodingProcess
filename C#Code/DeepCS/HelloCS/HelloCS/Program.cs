@@ -57,6 +57,7 @@ namespace HelloCS
 
             Magnate magnate = new Magnate();
             */
+            char[][] grid = { {'1' },{'1' } };
 
             var threadOne = new Thread(ThreadMain);
             threadOne.Start();
@@ -106,6 +107,47 @@ namespace HelloCS
 
             Console.ReadKey(true);
         }
+
+        // leetcode 200
+
+        public int NumIslands(char[][] grid)
+        {
+
+            // nothing return 0
+            if (grid.GetLength(0) == 0 || grid[0].GetLength(0) == 0)
+                return 0;
+
+            int m = grid.GetLength(0), n = grid[0].GetLength(0), islandCount = 0;
+            int[] dirX = { -1, 0, 1, 0 };
+            int[] dirY = { 0, 1, 0, -1 };
+
+            for (int i = 0; i < m; ++i)
+            {
+                for (int j = 0; j < n; ++j)
+                {
+
+                    if (grid[i][j] == '0' || grid[i][j] == '2') continue;
+                    islandCount++;
+
+                    Queue<int> q = new Queue<int>();
+                    q.Enqueue(i * n + j);
+                    while (q.Count > 0)
+                    {
+                        int t = q.Dequeue();
+                        for (int k = 0; k < 4; k++)
+                        {
+                            int x = t / n + dirX[k], y = t % n + dirY[k];
+                            if (x < 0 || x >= m || y < 0 || y >= n || grid[x][y] == '0' || grid[x][y] == '2') continue;
+                            grid[x][y] = '2';
+                            q.Enqueue(x * n + y);
+                        }
+                    }
+                }
+            }
+            return islandCount;
+        }
+    
+            }
 
     }
 }

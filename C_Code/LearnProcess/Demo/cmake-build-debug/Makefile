@@ -122,6 +122,33 @@ Demo/fast:
 	$(MAKE) -f CMakeFiles\Demo.dir\build.make CMakeFiles/Demo.dir/build
 .PHONY : Demo/fast
 
+SaleCompany.obj: SaleCompany.cpp.obj
+
+.PHONY : SaleCompany.obj
+
+# target to build an object file
+SaleCompany.cpp.obj:
+	$(MAKE) -f CMakeFiles\Demo.dir\build.make CMakeFiles/Demo.dir/SaleCompany.cpp.obj
+.PHONY : SaleCompany.cpp.obj
+
+SaleCompany.i: SaleCompany.cpp.i
+
+.PHONY : SaleCompany.i
+
+# target to preprocess a source file
+SaleCompany.cpp.i:
+	$(MAKE) -f CMakeFiles\Demo.dir\build.make CMakeFiles/Demo.dir/SaleCompany.cpp.i
+.PHONY : SaleCompany.cpp.i
+
+SaleCompany.s: SaleCompany.cpp.s
+
+.PHONY : SaleCompany.s
+
+# target to generate assembly for a file
+SaleCompany.cpp.s:
+	$(MAKE) -f CMakeFiles\Demo.dir\build.make CMakeFiles/Demo.dir/SaleCompany.cpp.s
+.PHONY : SaleCompany.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -185,6 +212,9 @@ help:
 	@echo ... Demo
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... SaleCompany.obj
+	@echo ... SaleCompany.i
+	@echo ... SaleCompany.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/CodeRes/C_Code/LearnProcess/Demo/cmake-build-debug/SaleCompany.cpp">
+			<Option target="Demo"/>
+		</Unit>
+		<Unit filename="D:/CodeRes/C_Code/LearnProcess/Demo/cmake-build-debug/SaleCompany.h">
+			<Option target="Demo"/>
+		</Unit>
 		<Unit filename="D:/CodeRes/C_Code/LearnProcess/Demo/main.cpp">
 			<Option target="Demo"/>
 		</Unit>

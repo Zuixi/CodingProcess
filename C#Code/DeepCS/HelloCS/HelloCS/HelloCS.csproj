@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MathOperations\Math\MathOperation.cs" />
+    <Compile Include="OpreatorFile\SimpleFileOp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleFactory\Bmw.cs" />
